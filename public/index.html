@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Journal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Dream Journal</h1>
+        
+        <form id="dreamForm">
+            <input type="text" id="title" placeholder="Dream Title" required>
+            <textarea id="description" placeholder="Describe your dream..." required></textarea>
+            <input type="date" id="date" required>
+            <select id="mood" required>
+                <option value="">Select Mood</option>
+                <option value="happy">Happy</option>
+                <option value="scary">Scary</option>
+                <option value="weird">Weird</option>
+                <option value="peaceful">Peaceful</option>
+            </select>
+            <button type="submit">Save Dream</button>
+        </form>
+
+        <div id="dreamList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
